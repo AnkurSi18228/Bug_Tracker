@@ -4,6 +4,10 @@ import pickle
 import streamlit as st
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('punkt_tab')
 
 
 def clean_code(text):
