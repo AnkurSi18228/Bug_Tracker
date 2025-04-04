@@ -20,7 +20,7 @@ button= st.button("Predict!")
 
 if button:
     vectorizer = pickle.load(open('tfidf_vectorizer.pkl', 'rb'))
-    model = pickle.load(open('model.pkl', 'rb'))
+    model = pickle.load(open('rf_model.pkl', 'rb'))
     # clean the input code
     cleaned_code = clean_code(user_input)
     # vectorize the cleaned code
